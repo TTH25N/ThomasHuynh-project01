@@ -221,3 +221,96 @@ template {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+nav {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 29px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: "Kumar One Outline", cursive;
+  font-size: 6.8rem;
+  line-height: 6.4rem;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.externalWrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  background-color: #F5F5F5;
+}
+
+.homeHeader {
+  background-image: url(../../../../images/header-home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 75rem;
+}
+
+.homeNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 3.75rem 0;
+}
+.homeNav li {
+  margin-right: 5.5rem;
+}
+.homeNav li:first-child {
+  border-bottom: 0.4rem solid #F8FB05;
+}
+
+.homeHeaderTitle {
+  width: 50%;
+  padding-top: 1rem;
+  padding: 1rem 0 5rem 12.5rem;
+}
+
+.blueCouchImg {
+  width: 55%;
+}
+.blueCouchImg img {
+  min-width: 75rem;
+}
