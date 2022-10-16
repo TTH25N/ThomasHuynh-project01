@@ -239,6 +239,21 @@ h1 {
   text-transform: uppercase;
 }
 
+h2 {
+  font-family: "Kumar One", cursive;
+  font-size: 3.3rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.21rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+}
+
 .wrapper {
   width: 100%;
   margin: 0 auto;
@@ -278,6 +293,10 @@ body {
   background-color: #F5F5F5;
 }
 
+section:nth-of-type(2n) {
+  background-color: #E0FDDF;
+}
+
 .homeHeader {
   background-image: url(../../../../images/header-home.jpg);
   background-repeat: no-repeat;
@@ -313,4 +332,53 @@ body {
 }
 .blueCouchImg img {
   min-width: 75rem;
+}
+
+.newMaterials {
+  margin-top: 20rem;
+  margin-bottom: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5rem 0;
+}
+.newMaterials h2 {
+  margin-bottom: 1rem;
+}
+.newMaterials p {
+  margin-bottom: 1.5rem;
+}
+
+.newMaterialsText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 65%;
+}
+
+.findOutMore {
+  font-family: "Kumar One", cursive;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 3.2rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #065635;
+  padding: 1.25rem 2.75rem 0.75rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  cursor: pointer;
+}
+
+.purpleCoachImg img {
+  -webkit-box-shadow: -2rem 2rem 0 0 #F8FB05;
+          box-shadow: -2rem 2rem 0 0 #F8FB05;
 }

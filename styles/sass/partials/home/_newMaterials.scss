@@ -1,0 +1,45 @@
+@use "../global/variables";
+
+.newMaterials {
+    margin-top: 20rem;
+    margin-bottom: 6rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 0;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.newMaterialsText {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.findOutMore {
+    font-family: variables.$secondaryHeadingFont;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 3.2rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: variables.$everGreen; 
+    padding: 1.25rem 2.75rem 0.75rem;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.purpleCoachImg {
+    img {
+        box-shadow: -2rem 2rem 0 0 variables.$brightYellow;
+    }
+}
+
+
