@@ -398,3 +398,45 @@ section:nth-of-type(2n) {
 .galleryContainer img {
   width: 30%;
 }
+
+.externalResources {
+  padding: 10rem 0;
+}
+.externalResources ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.externalResources ul li {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5rem;
+}
+.externalResources ul li:nth-of-type(2n) {
+  margin-left: 5rem;
+}
+
+span {
+  background-color: #F8FB05;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  border-radius: 50%;
+  font-size: 3.5rem;
+  padding: 2rem 2rem;
+}
+
+.file {
+  padding: 2rem 2.5rem;
+}
+
+.externalResourcesText {
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+}
