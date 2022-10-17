@@ -297,6 +297,22 @@ section:nth-of-type(2n) {
   background-color: #E0FDDF;
 }
 
+.homeButton {
+  font-family: "Kumar One", cursive;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 3.2rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  background-color: #065635;
+  padding: 1.25rem 2.75rem 0.75rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  cursor: pointer;
+}
+
 .homeHeader {
   background-image: url(../images/header-home.jpg);
   background-repeat: no-repeat;
@@ -363,21 +379,6 @@ section:nth-of-type(2n) {
   width: 65%;
 }
 
-.findOutMore {
-  font-family: "Kumar One", cursive;
-  font-size: 2rem;
-  text-align: center;
-  line-height: 3.2rem;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #065635;
-  padding: 1.25rem 2.75rem 0.75rem;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  cursor: pointer;
-}
-
 .purpleCoachImg {
   margin-left: 5rem;
 }
@@ -439,4 +440,62 @@ span {
 .externalResourcesText {
   margin-top: 1.5rem;
   margin-left: 2rem;
+}
+
+.newLocationsGroupPrograms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.newLocationsContainer, .groupProgramsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 42.5%;
+}
+.newLocationsContainer img, .groupProgramsContainer img {
+  width: 100%;
+}
+
+.newLocationsImg {
+  position: relative;
+  bottom: 4.75rem;
+  background-color: yellow;
+}
+.newLocationsImg img {
+  -webkit-box-shadow: 3rem 3rem 0 -1rem #F8FB05;
+          box-shadow: 3rem 3rem 0 -1rem #F8FB05;
+}
+
+.groupProgramsImg {
+  position: relative;
+  top: 5rem;
+}
+.groupProgramsImg img {
+  -webkit-box-shadow: -3rem 3rem 0 -1rem #F8FB05;
+          box-shadow: -3rem 3rem 0 -1rem #F8FB05;
+}
+
+.newLocationsText, .groupProgramsText {
+  margin-top: 10rem;
+  margin-bottom: 7.5rem;
+  width: 80%;
+}
+.newLocationsText p, .groupProgramsText p {
+  padding-top: 0.75rem;
+  padding-bottom: 3rem;
+}
+
+.newLocationsText {
+  text-align: right;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
