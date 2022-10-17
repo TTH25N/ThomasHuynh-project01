@@ -499,3 +499,13 @@ span {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
+
+.searchByStyleText {
+  margin: 20rem auto;
+  width: 82.5%;
+  text-align: center;
+}
+.searchByStyleText p {
+  text-align: left;
+  padding-bottom: 4rem;
+}
