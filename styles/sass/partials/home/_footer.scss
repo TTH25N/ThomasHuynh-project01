@@ -1,0 +1,8 @@
+@use "../global/variables";
+
+.homeFooter {
+    color: variables.$white;
+    background-color: variables.$black;
+    text-align: center;
+    padding: 0.5rem 0;
+}

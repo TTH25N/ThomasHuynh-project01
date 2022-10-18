@@ -13,25 +13,41 @@
     justify-content: flex-end;
     padding: 3.75rem 0;
 
-        li {
-            margin-right: 5.5rem;
+    li {
+        margin-right: 5.5rem;
+        position: relative;
 
-            &:first-child {
-                border-bottom: 0.4rem solid variables.$brightYellow;
-            }
+        &::after {
+            content: "";
+            height: 0.4rem;
+            width: 0;
+            background-color: variables.$brightYellow;
+            position: absolute;
+            left: 0;
+            top: 2.9rem;
+            transition: 0.5s;
         }
-}
 
-.homeHeaderTitle {
-    width: 50%;
-    padding-top: 1rem;
-    padding: 1rem 0 5rem 12.5rem;
-}
+        &:hover::after {
+            width: 100%;
+        }
 
-.blueCouchImg {
-    width: 55%;
-
-    img {
-        min-width: 75rem;
+        &:first-child {
+            border-bottom: 0.45rem solid variables.$brightYellow;
+        }
     }
 }
+
+    .homeHeaderTitle {
+        width: 45%;
+        padding-top: 1rem;
+        padding: 1rem 0 5rem 12.5rem;
+    }
+
+    .blueCouchImg {
+        width: 55%;
+
+        img {
+            min-width: 75rem;
+        }
+    }

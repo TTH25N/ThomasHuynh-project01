@@ -332,13 +332,28 @@ section:nth-of-type(2n) {
 }
 .homeNav li {
   margin-right: 5.5rem;
+  position: relative;
+}
+.homeNav li::after {
+  content: "";
+  height: 0.4rem;
+  width: 0;
+  background-color: #F8FB05;
+  position: absolute;
+  left: 0;
+  top: 2.9rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.homeNav li:hover::after {
+  width: 100%;
 }
 .homeNav li:first-child {
-  border-bottom: 0.4rem solid #F8FB05;
+  border-bottom: 0.45rem solid #F8FB05;
 }
 
 .homeHeaderTitle {
-  width: 50%;
+  width: 45%;
   padding-top: 1rem;
   padding: 1rem 0 5rem 12.5rem;
 }
@@ -414,7 +429,7 @@ section:nth-of-type(2n) {
       flex-wrap: wrap;
 }
 .externalResources ul li {
-  width: 45%;
+  width: 47.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -508,4 +523,11 @@ span {
 .searchByStyleText p {
   text-align: left;
   padding-bottom: 4rem;
+}
+
+.homeFooter {
+  color: #F5F5F5;
+  background-color: #151514;
+  text-align: center;
+  padding: 0.5rem 0;
 }
