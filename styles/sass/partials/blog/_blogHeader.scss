@@ -1,0 +1,40 @@
+@use "../global/variables";
+
+.blogHeader {
+    background-image: url(../images/blog-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 56.8rem;
+}
+
+.blogLogoNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogHeaderLogo {
+    width: 20%;
+    padding: 2rem 0;
+
+    p {
+        font-family: variables.$secondaryHeadingFont;
+        font-size: 2rem;
+        line-height: 2.25rem;
+        letter-spacing: 0.21rem;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+}
+
+.blogNav {
+    li {
+        &:nth-child(3) {
+            border-bottom: 0.45rem solid variables.$brightYellow;
+        }
+    }
+}
+
+.blogHeaderTitle {
+    margin-top: 11.5rem;
+}

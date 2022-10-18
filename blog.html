@@ -10,20 +10,32 @@
 </head>
 <body>
     <div class="externalWrapper">
+
         <header class="blogHeader">
             <div class="wrapper">
-                <h1>Sanctuary Helpers</h1>
-                <nav>
-                    <ul class="blogNav">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <h2>Blog</h2>
+                <div class="blogLogoNav">
+                    <div class="blogHeaderLogo">
+                        <p>Sanctuary Helpers</p>
+                    </div>
+
+                    <nav>
+                        <ul class="blogNav globalNav">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="blogHeaderTitle">
+                <h1>Blog</h1>
+                </div>
+
             </div>
         </header>
+
+
+
 
         <main>
 
@@ -33,7 +45,7 @@
                         <img src="./images/blog-post-image.jpg" alt="A light blue sofa bed with a matress. The matress is covered with a white sheet with six different sized pillows on top. The surrounding area is decorated with a painted picture above the sofa bed and a lamp on a small night stand to the left.">
                     </div>
 
-                    <div class="blogPostText">
+                    <div class="blogPostText wrapper">
                         <h3>Finding The Right Pieces For New Space</h3>
 
                         <p>Monday, October 5th, 2019 by <span>Saron</span></p>
@@ -65,7 +77,7 @@
                     </aside>
             </section>
 
-            <section class="userComments">
+            <section class="userComments wrapper">
                 <h4>Comments:</h4>
             
                 <div class="firstComment">
@@ -96,7 +108,26 @@
                     </div>
             </section>
 
+            <section class="postComment wrapper">
+                <form action="submit">
+                    <label for="name">Name</label>
+                    <input type="text" name="username" id="username" placeholder="name" required>
+                  
+                    <label for="email">Email Address</label>
+                    <input type="password" name="userpass" id="userpass" placeholder="email address" required>
+                  
+                    <textarea name="comment" id="comment" placeholder="comment" required></textarea>
+
+                    <button type="submit">Post Comment</button>
+                  </form>
+            </section>
         </main>
+
+        <footer class="globalFooter">
+            <div class="wrapper">
+                <p>Copyright © 2022 HackerYou</p>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

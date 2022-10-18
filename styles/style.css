@@ -297,7 +297,32 @@ section:nth-of-type(2n) {
   background-color: #E0FDDF;
 }
 
-.homeButton {
+.globalNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem 0;
+}
+.globalNav li {
+  margin-left: 5.5rem;
+  position: relative;
+}
+.globalNav li::after {
+  content: "";
+  height: 0.4rem;
+  width: 0;
+  background-color: #F8FB05;
+  position: absolute;
+  left: 0;
+  top: 2.9rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.globalNav li:hover::after {
+  width: 100%;
+}
+
+.button {
   font-family: "Kumar One", cursive;
   font-size: 2rem;
   text-align: center;
@@ -313,6 +338,13 @@ section:nth-of-type(2n) {
   cursor: pointer;
 }
 
+.globalFooter {
+  color: #F5F5F5;
+  background-color: #151514;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
 .homeHeader {
   background-image: url(../images/header-home.jpg);
   background-repeat: no-repeat;
@@ -322,31 +354,9 @@ section:nth-of-type(2n) {
 }
 
 .homeNav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 3.75rem 0;
-}
-.homeNav li {
-  margin-right: 5.5rem;
-  position: relative;
-}
-.homeNav li::after {
-  content: "";
-  height: 0.4rem;
-  width: 0;
-  background-color: #F8FB05;
-  position: absolute;
-  left: 0;
-  top: 2.9rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.homeNav li:hover::after {
-  width: 100%;
 }
 .homeNav li:first-child {
   border-bottom: 0.45rem solid #F8FB05;
@@ -439,7 +449,7 @@ section:nth-of-type(2n) {
   margin-left: 5rem;
 }
 
-span {
+.icon {
   background-color: #F8FB05;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -525,9 +535,40 @@ span {
   padding-bottom: 4rem;
 }
 
-.homeFooter {
-  color: #F5F5F5;
-  background-color: #151514;
-  text-align: center;
-  padding: 0.5rem 0;
+.blogHeader {
+  background-image: url(../images/blog-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 56.8rem;
+}
+
+.blogLogoNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogHeaderLogo {
+  width: 20%;
+  padding: 2rem 0;
+}
+.blogHeaderLogo p {
+  font-family: "Kumar One", cursive;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  letter-spacing: 0.21rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.blogNav li:nth-child(3) {
+  border-bottom: 0.45rem solid #F8FB05;
+}
+
+.blogHeaderTitle {
+  margin-top: 11.5rem;
 }

@@ -43,8 +43,32 @@ section:nth-of-type(2n) {
     background-color: variables.$ice;
 }
 
+.globalNav {
+    display: flex;
+    padding: 3rem 0;
 
-.homeButton {
+    li {
+        margin-left: 5.5rem;
+        position: relative;
+
+        &::after {
+            content: "";
+            height: 0.4rem;
+            width: 0;
+            background-color: variables.$brightYellow;
+            position: absolute;
+            left: 0;
+            top: 2.9rem;
+            transition: 0.5s;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}
+
+.button {
     font-family: variables.$secondaryHeadingFont;
     font-size: 2rem;
     text-align: center;
@@ -57,4 +81,11 @@ section:nth-of-type(2n) {
     padding: 1.25rem 2.75rem 0.75rem;
     align-self: flex-start;
     cursor: pointer;
+}
+
+.globalFooter {
+    color: variables.$white;
+    background-color: variables.$black;
+    text-align: center;
+    padding: 0.5rem 0;
 }
