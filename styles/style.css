@@ -572,3 +572,68 @@ section:nth-of-type(2n) {
 .blogHeaderTitle {
   margin-top: 11.5rem;
 }
+.blogHeaderTitle h2 {
+  font-weight: lighter;
+}
+
+.blogPost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogPostContent {
+  width: 62.75%;
+  border: 1rem solid #F8FB05;
+  border-top: none;
+  border-left: none;
+  min-width: 80rem;
+}
+
+.blueSofaBedImg {
+  position: relative;
+  top: -16rem;
+  padding-right: 1rem;
+}
+.blueSofaBedImg img {
+  -webkit-box-shadow: 3rem 3rem 0 -1rem #F8FB05;
+          box-shadow: 3rem 3rem 0 -1rem #F8FB05;
+}
+
+.blogPostText {
+  width: 77.5%;
+  margin-top: -10rem;
+  margin-left: 16%;
+}
+.blogPostText h3 {
+  font-family: "Kumar One", cursive;
+  font-size: 3.3rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.21rem;
+  text-transform: uppercase;
+}
+.blogPostText p {
+  margin: 2.5rem 0;
+}
+
+.authorPostDate {
+  letter-spacing: -0.05rem;
+}
+.authorPostDate span {
+  font-weight: bold;
+}
+
+.blogPostSideBar {
+  width: 20%;
+}
+.blogPostSideBar img {
+  -webkit-box-shadow: -3rem 1rem 0 -1rem #F8FB05;
+          box-shadow: -3rem 1rem 0 -1rem #F8FB05;
+}
+
+.blogPostSideBarText {
+  background-color: #F8FB05;
+}

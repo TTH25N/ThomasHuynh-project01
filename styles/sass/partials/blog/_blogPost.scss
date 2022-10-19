@@ -1,0 +1,63 @@
+@use "../global/variables";
+
+.blogPost {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogPostContent {
+    width: 62.75%;
+    border: 1rem solid variables.$brightYellow;
+    border-top: none;
+    border-left: none;
+    min-width: 80rem;
+}
+
+.blueSofaBedImg {
+    position: relative;
+    top: -16rem;
+    padding-right: 1rem;
+
+    img {
+        box-shadow: 3rem 3rem 0 -1rem variables.$brightYellow;
+    }
+}
+
+.blogPostText {
+    width: 77.5%;
+    margin-top: -10rem;
+    margin-left: 16%;
+
+    h3 {
+        font-family: variables.$secondaryHeadingFont;
+        font-size: 3.3rem;
+        line-height: 5.8rem;
+        letter-spacing: 0.21rem;
+        text-transform: uppercase;
+    }
+
+    p {
+        margin: 2.5rem 0;
+    }
+
+}
+
+.authorPostDate {
+    letter-spacing: -0.05rem;
+
+    span {
+        font-weight: bold;
+    }
+}
+
+.blogPostSideBar {
+    width: 20%;
+    
+    img {
+        box-shadow: -3rem 1rem 0 -1rem variables.$brightYellow;
+    }
+}
+
+.blogPostSideBarText {
+    background-color: variables.$brightYellow;
+}
