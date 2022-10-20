@@ -247,6 +247,14 @@ h2 {
   text-transform: uppercase;
 }
 
+h4 {
+  font-family: "Kumar One", cursive;
+  font-size: 2.5rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.21rem;
+  text-transform: uppercase;
+}
+
 p {
   font-family: "Lato", sans-serif;
   font-size: 2rem;
@@ -583,6 +591,7 @@ section:nth-of-type(2n) {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #E0FDDF;
 }
 
 .blogPostContent {
@@ -617,10 +626,10 @@ section:nth-of-type(2n) {
   margin: 2.2rem 0;
 }
 
-.authorPostDate {
+.authorBlogPostDate {
   letter-spacing: -0.05rem;
 }
-.authorPostDate span {
+.authorBlogPostDate span {
   font-weight: bold;
 }
 
@@ -644,11 +653,6 @@ section:nth-of-type(2n) {
           box-shadow: -3rem 1rem 0 -1rem #F8FB05;
 }
 .blogPostSideBar h4 {
-  font-family: "Kumar One", cursive;
-  font-size: 2.5rem;
-  line-height: 5.8rem;
-  letter-spacing: 0.21rem;
-  text-transform: uppercase;
   padding-top: 2rem;
 }
 .blogPostSideBar ul {
@@ -665,4 +669,45 @@ section:nth-of-type(2n) {
   padding: 0 1rem 3rem;
   -webkit-box-shadow: -2rem 0rem 0 0 #F8FB05;
           box-shadow: -2rem 0rem 0 0 #F8FB05;
+}
+
+.userCommentsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.userCommentsContainer h4 {
+  margin: 4.5rem 0;
+}
+
+.firstComment, .secondComment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.firstComment {
+  margin-bottom: 5rem;
+}
+
+.firstCommentImg, .secondCommentImg {
+  margin-right: 4rem;
+}
+
+.firstCommentText, .secondCommentText {
+  width: 50%;
+  padding-bottom: 5rem;
+}
+
+.authorCommentPostDate {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
 }
