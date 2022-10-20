@@ -703,11 +703,100 @@ section:nth-of-type(2n) {
 
 .firstCommentText, .secondCommentText {
   width: 50%;
-  padding-bottom: 5rem;
+  margin-bottom: 5rem;
 }
 
 .authorCommentPostDate {
   font-weight: bold;
   text-transform: uppercase;
   padding-bottom: 1rem;
+}
+
+.postComment form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.postComment form input::-webkit-input-placeholder, .postComment form textarea::-webkit-input-placeholder {
+  text-transform: uppercase;
+  color: #151514;
+  font-size: 2rem;
+  letter-spacing: 0.21rem;
+  opacity: 1;
+}
+.postComment form input::-moz-placeholder, .postComment form textarea::-moz-placeholder {
+  text-transform: uppercase;
+  color: #151514;
+  font-size: 2rem;
+  letter-spacing: 0.21rem;
+  opacity: 1;
+}
+.postComment form input:-ms-input-placeholder, .postComment form textarea:-ms-input-placeholder {
+  text-transform: uppercase;
+  color: #151514;
+  font-size: 2rem;
+  letter-spacing: 0.21rem;
+  opacity: 1;
+}
+.postComment form input::-ms-input-placeholder, .postComment form textarea::-ms-input-placeholder {
+  text-transform: uppercase;
+  color: #151514;
+  font-size: 2rem;
+  letter-spacing: 0.21rem;
+  opacity: 1;
+}
+.postComment form input::placeholder,
+.postComment form textarea::placeholder {
+  text-transform: uppercase;
+  color: #151514;
+  font-size: 2rem;
+  letter-spacing: 0.21rem;
+  opacity: 1;
+}
+
+.nameEmail {
+  margin-bottom: 5rem;
+}
+.nameEmail input[type=text],
+.nameEmail input[type=email] {
+  height: 5rem;
+  width: 40rem;
+  font-size: 2rem;
+  background-color: #E0FDDF;
+  border: none;
+  border-bottom: 0.2rem solid #065635;
+  padding: 4rem;
+  margin-right: 5rem;
+}
+.nameEmail input[type=email] {
+  margin-right: 0;
+}
+
+.commentSubmission {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.commentSubmission textarea {
+  height: 20rem;
+  width: 100%;
+  font-size: 2rem;
+  background-color: #E0FDDF;
+  border: 0.2rem solid #065635;
+  padding: 4rem;
+  resize: none;
+}
+.commentSubmission .button {
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
 }

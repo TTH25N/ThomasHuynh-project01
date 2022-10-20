@@ -24,11 +24,69 @@
 
 .firstCommentText, .secondCommentText {
     width: 50%;
-    padding-bottom: 5rem;
+    margin-bottom: 5rem;
 }
 
 .authorCommentPostDate {
     font-weight: bold;
     text-transform: uppercase;
     padding-bottom: 1rem;
+}
+
+
+.postComment {
+    form {
+        display: flex;
+        flex-direction: column;
+
+        input::placeholder,
+        textarea::placeholder {
+            text-transform: uppercase;
+            color: variables.$black;
+            font-size: 2rem;
+            letter-spacing: 0.21rem;
+            opacity: 1;
+        }
+    }
+}
+
+.nameEmail {
+    margin-bottom: 5rem;
+
+    input[type=text], 
+    input[type=email] {
+        height: 5rem;
+        width: 40rem;
+        font-size: 2rem;
+        background-color: variables.$ice;
+        border: none;
+        border-bottom: 0.2rem solid variables.$everGreen;
+        padding: 4rem;
+        margin-right: 5rem;
+    }
+
+    input[type=email] {
+        margin-right: 0;
+    }
+}
+
+.commentSubmission {
+    display: flex;
+    flex-direction: column;
+
+    textarea {
+        height: 20rem;
+        width: 100%;
+        font-size: 2rem;
+        background-color: variables.$ice;
+        border: 0.2rem solid variables.$everGreen;
+        padding: 4rem;
+        resize: none;
+    }
+
+    .button {
+        margin-top: 4rem;
+        margin-bottom: 10rem;
+        align-self: stretch;
+    }
 }

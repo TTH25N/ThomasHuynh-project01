@@ -107,35 +107,41 @@
                         </div>
                     </div>
             
-                        <div class="secondComment">
-                            <div class="secondCommentImg">
-                                <img src="./images/comment-image2.jpg" alt="Two zebras">
-                            </div>
-            
-                            <div class="secondCommentText">
-                                <p class="authorCommentPostDate">Wednesday October 10th, 2019 by Lisa</p>
-            
-                                <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae
-                                    ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod
-                                    scelerisque
-                                    ligula. Maecenas eu varius risis..</p>
-                            </div>
+                    <div class="secondComment">
+                        <div class="secondCommentImg">
+                            <img src="./images/comment-image2.jpg" alt="Two zebras">
                         </div>
+            
+                        <div class="secondCommentText">
+                            <p class="authorCommentPostDate">Wednesday October 10th, 2019 by Lisa</p>
+            
+                            <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae
+                                ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod
+                                scelerisque
+                                ligula. Maecenas eu varius risis..</p>
+                        </div>
+                    </div>
+            
+                    <div class="postComment">
+                        <form action="submit">
+
+                            <div class="nameEmail">
+                                <label for="name" class="sr-only">Name</label>
+                                <input type="text" name="username" id="username" placeholder="name" required>
+                
+                                <label for="email" class="sr-only">Email Address</label>
+                                <input type="email" name="userpass" id="userpass" placeholder="email address" required>
+                            </div>
+
+                            <div class="commentSubmission">
+                                <textarea name="comment" id="comment" placeholder="comment" required></textarea>
+            
+                                <button type="submit" class="button">Post Comment</button>
+                            </div>
+                        </form>
+                    </div>
             </section>
 
-            <section class="postComment wrapper">
-                <form action="submit">
-                    <label for="name">Name</label>
-                    <input type="text" name="username" id="username" placeholder="name" required>
-                  
-                    <label for="email">Email Address</label>
-                    <input type="password" name="userpass" id="userpass" placeholder="email address" required>
-                  
-                    <textarea name="comment" id="comment" placeholder="comment" required></textarea>
-
-                    <button type="submit">Post Comment</button>
-                  </form>
-            </section>
         </main>
 
         <footer class="globalFooter">
