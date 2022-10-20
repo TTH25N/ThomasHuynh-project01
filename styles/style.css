@@ -330,6 +330,35 @@ section:nth-of-type(2n) {
   width: 100%;
 }
 
+.blogContactLogoNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogContactHeaderLogo {
+  width: 20%;
+  padding: 2rem 0;
+}
+.blogContactHeaderLogo p {
+  font-family: "Kumar One", cursive;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  letter-spacing: 0.21rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.blogContactHeaderTitle {
+  margin-top: 11.5rem;
+}
+.blogContactHeaderTitle h2 {
+  font-weight: lighter;
+}
+
 .button {
   font-family: "Kumar One", cursive;
   font-size: 2rem;
@@ -551,37 +580,8 @@ section:nth-of-type(2n) {
   height: 56.8rem;
 }
 
-.blogLogoNav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.blogHeaderLogo {
-  width: 20%;
-  padding: 2rem 0;
-}
-.blogHeaderLogo p {
-  font-family: "Kumar One", cursive;
-  font-size: 2rem;
-  line-height: 2.25rem;
-  letter-spacing: 0.21rem;
-  text-transform: uppercase;
-  font-weight: 300;
-}
-
 .blogNav li:nth-child(3) {
   border-bottom: 0.45rem solid #F8FB05;
-}
-
-.blogHeaderTitle {
-  margin-top: 11.5rem;
-}
-.blogHeaderTitle h2 {
-  font-weight: lighter;
 }
 
 .blogPost {
@@ -799,4 +799,16 @@ section:nth-of-type(2n) {
   margin-bottom: 10rem;
   -ms-flex-item-align: stretch;
       align-self: stretch;
+}
+
+.contactHeader {
+  background-image: url(../images/blog-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 56.8rem;
+}
+
+.contactNav li:nth-child(4) {
+  border-bottom: 0.45rem solid #F8FB05;
 }

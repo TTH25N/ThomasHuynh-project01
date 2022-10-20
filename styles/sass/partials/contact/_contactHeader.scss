@@ -1,6 +1,6 @@
 @use "../global/variables";
 
-.blogHeader {
+.contactHeader {
     background-image: url(../images/blog-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,9 +8,9 @@
     height: 56.8rem;
 }
 
-.blogNav {
+.contactNav {
     li {
-        &:nth-child(3) {
+        &:nth-child(4) {
             border-bottom: 0.45rem solid variables.$brightYellow;
         }
     }

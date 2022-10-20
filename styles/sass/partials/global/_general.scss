@@ -68,6 +68,33 @@ section:nth-of-type(2n) {
     }
 }
 
+.blogContactLogoNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogContactHeaderLogo {
+    width: 20%;
+    padding: 2rem 0;
+
+    p {
+        font-family: variables.$secondaryHeadingFont;
+        font-size: 2rem;
+        line-height: 2.25rem;
+        letter-spacing: 0.21rem;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+}
+
+.blogContactHeaderTitle {
+    margin-top: 11.5rem;
+
+    h2 {
+        font-weight: lighter;
+    }
+}
+
 .button {
     font-family: variables.$secondaryHeadingFont;
     font-size: 2rem;
