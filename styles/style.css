@@ -581,7 +581,7 @@ section:nth-of-type(2n) {
 }
 
 .blogNav li:nth-child(3) {
-  border-bottom: 0.45rem solid #F8FB05;
+  border-bottom: 0.5rem solid #F8FB05;
 }
 
 .blogPost {
@@ -802,7 +802,7 @@ section:nth-of-type(2n) {
 }
 
 .contactHeader {
-  background-image: url(../images/blog-image.jpg);
+  background-image: url(../images/contact-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -810,5 +810,136 @@ section:nth-of-type(2n) {
 }
 
 .contactNav li:nth-child(4) {
-  border-bottom: 0.45rem solid #F8FB05;
+  border-bottom: 0.5rem solid #F8FB05;
+}
+
+.contactInfo {
+  background-color: #E0FDDF;
+}
+
+.contactInfoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.socialsLocation {
+  width: 20%;
+}
+
+.postMessage {
+  position: relative;
+  top: -15.5rem;
+  left: -6.75rem;
+  padding: 8rem 5.5rem;
+  background-color: #F5F5F5;
+  -webkit-box-shadow: 3rem 3rem 0 -1rem #F8FB05;
+          box-shadow: 3rem 3rem 0 -1rem #F8FB05;
+}
+.postMessage form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.postMessage form input::-webkit-input-placeholder, .postMessage form textarea::-webkit-input-placeholder {
+  text-transform: uppercase;
+  color: #151514;
+  font-size: 2rem;
+  letter-spacing: 0.21rem;
+  opacity: 1;
+}
+.postMessage form input::-moz-placeholder, .postMessage form textarea::-moz-placeholder {
+  text-transform: uppercase;
+  color: #151514;
+  font-size: 2rem;
+  letter-spacing: 0.21rem;
+  opacity: 1;
+}
+.postMessage form input:-ms-input-placeholder, .postMessage form textarea:-ms-input-placeholder {
+  text-transform: uppercase;
+  color: #151514;
+  font-size: 2rem;
+  letter-spacing: 0.21rem;
+  opacity: 1;
+}
+.postMessage form input::-ms-input-placeholder, .postMessage form textarea::-ms-input-placeholder {
+  text-transform: uppercase;
+  color: #151514;
+  font-size: 2rem;
+  letter-spacing: 0.21rem;
+  opacity: 1;
+}
+.postMessage form input::placeholder,
+.postMessage form textarea::placeholder {
+  text-transform: uppercase;
+  color: #151514;
+  font-size: 2rem;
+  letter-spacing: 0.21rem;
+  opacity: 1;
+}
+
+.nameEmail {
+  margin-bottom: 5rem;
+}
+.nameEmail input[type=text],
+.nameEmail input[type=email] {
+  height: 5rem;
+  width: 40rem;
+  font-size: 2rem;
+  background-color: #F5F5F5;
+  border: none;
+  border-bottom: 0.2rem solid #065635;
+  padding: 4rem;
+  margin-right: 5rem;
+}
+.nameEmail input[type=email] {
+  margin-right: 0;
+}
+
+.messageSubmission {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.messageSubmission textarea {
+  height: 27.5rem;
+  width: 100%;
+  font-size: 2rem;
+  background-color: #F5F5F5;
+  border: 0.2rem solid #065635;
+  padding: 4.5rem 4rem;
+  resize: none;
+}
+.messageSubmission .button {
+  margin-top: 4rem;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+}
+
+.socialsLocation {
+  margin-top: 16.5rem;
+}
+
+.socialIcons {
+  color: #065635;
+  font-size: 2.25rem;
+}
+
+.fa-facebook-f, .fa-instagram, .fa-twitter {
+  padding-right: 2rem;
+}
+
+.locationEmail {
+  padding: 2rem 0 3rem 0;
 }

@@ -1,7 +1,7 @@
 @use "../global/variables";
 
 .contactHeader {
-    background-image: url(../images/blog-image.jpg);
+    background-image: url(../images/contact-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -11,7 +11,7 @@
 .contactNav {
     li {
         &:nth-child(4) {
-            border-bottom: 0.45rem solid variables.$brightYellow;
+            border-bottom: 0.5rem solid variables.$brightYellow;
         }
     }
 }
