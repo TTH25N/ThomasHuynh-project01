@@ -8,7 +8,7 @@
 .newLocationsContainer, .groupProgramsContainer {
     display: flex;
     flex-direction: column;
-    width: 42.5%;
+    width: 45%;
 
     img {
         width: 100%;
@@ -18,7 +18,7 @@
 .newLocationsImg {
     position: relative;
     bottom: 4.75rem;
-    background-color: yellow;
+    min-width: 40rem;
 
     img {
         box-shadow: 3rem 3rem 0 -1rem variables.$brightYellow;
@@ -28,6 +28,7 @@
 .groupProgramsImg {
     position: relative;
     top: 5rem;
+    min-width: 40rem;
 
     img {
         box-shadow: -3rem 3rem 0 -1rem variables.$brightYellow;
@@ -37,7 +38,7 @@
 .newLocationsText, .groupProgramsText {
     margin-top: 10rem;
     margin-bottom: 7.5rem;
-    width: 80%;
+    width: 82.5%;
 
     p {
         padding-top: 0.75rem;

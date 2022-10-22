@@ -492,7 +492,7 @@ section:nth-of-type(2n) {
       align-self: flex-start;
   border-radius: 50%;
   font-size: 3.5rem;
-  padding: 2rem 2rem;
+  padding: 2rem;
 }
 
 .file {
@@ -521,7 +521,7 @@ section:nth-of-type(2n) {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 42.5%;
+  width: 45%;
 }
 .newLocationsContainer img, .groupProgramsContainer img {
   width: 100%;
@@ -530,7 +530,7 @@ section:nth-of-type(2n) {
 .newLocationsImg {
   position: relative;
   bottom: 4.75rem;
-  background-color: yellow;
+  min-width: 40rem;
 }
 .newLocationsImg img {
   -webkit-box-shadow: 3rem 3rem 0 -1rem #F8FB05;
@@ -540,6 +540,7 @@ section:nth-of-type(2n) {
 .groupProgramsImg {
   position: relative;
   top: 5rem;
+  min-width: 40rem;
 }
 .groupProgramsImg img {
   -webkit-box-shadow: -3rem 3rem 0 -1rem #F8FB05;
@@ -549,7 +550,7 @@ section:nth-of-type(2n) {
 .newLocationsText, .groupProgramsText {
   margin-top: 10rem;
   margin-bottom: 7.5rem;
-  width: 80%;
+  width: 82.5%;
 }
 .newLocationsText p, .groupProgramsText p {
   padding-top: 0.75rem;
@@ -572,6 +573,101 @@ section:nth-of-type(2n) {
   padding-bottom: 4rem;
 }
 
+@media (max-width: 1240px) {
+  .newMaterials h2, .externalResources h2, .newLocationsGroupPrograms h2, .searchByStyle h2 {
+    font-size: 2.9rem;
+    line-height: 4.8rem;
+  }
+  .newMaterials p, .externalResources p, .newLocationsGroupPrograms p, .searchByStyle p {
+    font-size: 1.8rem;
+  }
+  .newMaterials .button, .externalResources .button, .newLocationsGroupPrograms .button, .searchByStyle .button {
+    font-size: 1.8rem;
+  }
+  .homeHeader {
+    height: 60rem;
+  }
+  .homeHeaderTitle {
+    padding-bottom: 1rem;
+  }
+  .homeHeaderTitle h1 {
+    font-size: 5.8rem;
+  }
+  .blueCouchImg img {
+    min-width: 68rem;
+  }
+  .externalResources ul li {
+    width: 42.5%;
+  }
+  .newLocationsText, .groupProgramsText {
+    margin: 5rem 0;
+  }
+  .newLocationsText p, .groupProgramsText p {
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+  .groupProgramsImg {
+    top: 2rem;
+  }
+  .searchByStyleText {
+    margin: 15rem auto;
+  }
+}
+@media (max-width: 1000px) {
+  .newMaterials h2, .externalResources h2, .newLocationsGroupPrograms h2, .searchByStyle h2 {
+    font-size: 2.4rem;
+    line-height: 3.8rem;
+  }
+  .newMaterials p, .externalResources p, .newLocationsGroupPrograms p, .searchByStyle p {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+  .newMaterials .button, .externalResources .button, .newLocationsGroupPrograms .button, .searchByStyle .button {
+    font-size: 1.5rem;
+  }
+  .homeHeader {
+    height: 50rem;
+  }
+  .homeHeader nav {
+    font-size: 1.6rem;
+  }
+  .homeNav li {
+    margin-left: 4.5rem;
+  }
+  .homeHeaderTitle h1 {
+    font-size: 4.4rem;
+    line-height: 4.8rem;
+  }
+  .blueCouchImg img {
+    min-width: 54rem;
+  }
+  .externalResources {
+    padding: 7.5rem 0;
+  }
+  .externalResources ul li {
+    margin-bottom: 2.5rem;
+  }
+  .externalResources ul li:nth-of-type(2n) {
+    margin-left: 3.75rem;
+  }
+  .icon {
+    font-size: 3rem;
+    padding: 1.75rem;
+  }
+  .file {
+    padding: 1.75rem 2.25rem;
+  }
+  .newLocationsText, .groupProgramsText {
+    margin: 4rem 0;
+    width: 85%;
+  }
+  .searchByStyleText {
+    margin: 10rem auto;
+  }
+  .globalFooter p {
+    font-size: 1.6rem;
+  }
+}
 .blogHeader {
   background-image: url(../images/blog-image.jpg);
   background-repeat: no-repeat;
@@ -758,11 +854,11 @@ section:nth-of-type(2n) {
   opacity: 1;
 }
 
-.nameEmail {
+.commentNameEmail {
   margin-bottom: 5rem;
 }
-.nameEmail input[type=text],
-.nameEmail input[type=email] {
+.commentNameEmail input[type=text],
+.commentNameEmail input[type=email] {
   height: 5rem;
   width: 40rem;
   font-size: 2rem;
@@ -772,7 +868,7 @@ section:nth-of-type(2n) {
   padding: 4rem;
   margin-right: 5rem;
 }
-.nameEmail input[type=email] {
+.commentNameEmail input[type=email] {
   margin-right: 0;
 }
 
@@ -885,11 +981,11 @@ section:nth-of-type(2n) {
   opacity: 1;
 }
 
-.nameEmail {
+.messageNameEmail {
   margin-bottom: 5rem;
 }
-.nameEmail input[type=text],
-.nameEmail input[type=email] {
+.messageNameEmail input[type=text],
+.messageNameEmail input[type=email] {
   height: 5rem;
   width: 40rem;
   font-size: 2rem;
@@ -899,7 +995,7 @@ section:nth-of-type(2n) {
   padding: 4rem;
   margin-right: 5rem;
 }
-.nameEmail input[type=email] {
+.messageNameEmail input[type=email] {
   margin-right: 0;
 }
 
