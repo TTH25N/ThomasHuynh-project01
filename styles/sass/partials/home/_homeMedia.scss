@@ -1,0 +1,459 @@
+@use "../global/variables";
+
+@media(max-width: 1240px) {
+
+// GENERAL
+
+.newMaterials, .externalResources, .newLocationsGroupPrograms, .searchByStyle {
+    h2 {
+        font-size: 2.9rem;
+        line-height: 4.8rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
+
+    .button {
+        font-size: 1.8rem;
+    }
+}
+
+
+// HEADER
+
+    .homeHeader {
+        height: 60rem;
+    }
+
+    .homeHeaderTitle {
+        padding-bottom: 1rem;
+
+        h1 {
+            font-size: 5.8rem;
+        }
+    }
+
+    .blueCouchImg {
+        img {
+            min-width: 68rem;
+        }
+    }
+
+
+// EXTERNAL RESOURCES
+
+.externalResources {
+    ul {
+        li {
+            width: 42.5%;
+        }
+    }
+}
+
+
+// NEW LOCATIONS GROUP PROGRAMS
+
+.newLocationsText, .groupProgramsText {
+    margin: 5rem 0;
+
+    p {
+        padding-top: 0;
+        padding-bottom: 1rem;
+    }
+}
+
+.groupProgramsImg {
+    top: 2rem;
+}
+
+
+// SEARCH BY STYLE
+
+.searchByStyleText {
+    margin: 15rem auto;
+}
+
+}
+
+
+@media (max-width: 1000px) {
+
+// GENERAL
+
+.newMaterials, .externalResources, .newLocationsGroupPrograms, .searchByStyle {
+    h2 {
+        font-size: 2.4rem;
+        line-height: 3.8rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+    }
+
+    .button {
+        font-size: 1.5rem;
+    }
+}
+
+
+// HEADER
+
+.homeHeader {
+    height: 50rem;
+
+    nav {
+        font-size: 1.6rem;
+    }
+}
+
+.homeNav {
+    li {
+        margin-left: 4.5rem;
+    }
+}
+
+.homeHeaderTitle {
+    h1 {
+        font-size: 4.4rem;
+        line-height: 4.8rem;
+    }
+}
+
+.blueCouchImg {
+    img {
+        min-width: 54rem;
+    }
+}
+
+
+// EXTERNAL RESOURCES
+
+.externalResources {
+    padding: 7.5rem 0;
+
+    ul {
+        li {
+            margin-bottom: 2.5rem;
+        }
+
+        li:nth-of-type(2n) {
+            margin-left: 3.75rem;
+        }
+    }
+}
+
+.icon {
+    font-size: 3rem;
+    padding: 1.75rem;
+}
+
+.file {
+    padding: 1.75rem 2.25rem;
+}
+
+
+// NEW LOCATIONS GROUP PROGRAMS
+
+.newLocationsText, .groupProgramsText {
+    margin: 4rem 0;
+    width: 85%;
+}
+
+
+// SEARCH BY STYLE
+
+.searchByStyleText{
+    margin: 10rem auto;
+}
+
+
+// FOOTER
+
+.globalFooter {
+    p {
+        font-size: 1.6rem;
+    }
+}
+
+}
+
+
+@media (max-width: 840px) {
+
+// GENERAL
+
+.newMaterials, .externalResources, .newLocationsGroupPrograms, .searchByStyle {
+    h2 {
+        font-size: 2rem;
+        line-height: 3.2rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+
+    .button {
+        font-size: 1.25rem;
+        padding: 1rem 2rem 0.5rem;
+    }
+}
+
+
+// HEADER
+
+.homeHeader {
+    height: 40rem;
+
+    nav {
+        font-size: 1.25rem;
+    }
+}
+
+.homeNav {
+    li {
+        margin-left: 2.2rem;
+    }
+}
+
+.homeHeaderTitle {
+    margin-top: -3rem;
+    padding-left: 10rem;
+
+    h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+}
+
+.blueCouchImg {
+    img {
+        min-width: 42rem;
+    }
+}
+
+
+// NEW MATERIALS
+
+.newMaterials {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+}
+
+.newMaterialsText {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 5rem;
+
+    .button {
+        align-self: center;
+        padding: 1rem 5rem 0.5rem;
+    }
+}
+
+.purpleCoachImg {
+    margin-left: 0;
+    
+    img {
+        box-shadow: 0rem 3rem 0 -1rem variables.$brightYellow;
+    }
+}
+
+// EXTERNAL RESOURCES
+
+.externalResources {
+    padding: 7.5rem 0;
+
+    ul {
+        li {
+            width: 100%;
+            margin-bottom: 4rem;
+        }
+
+        li:nth-of-type(2n) {
+            margin-left: 0;
+        }
+    }
+}
+
+// NEW LOCATIONS GROUP PROGRAMS
+
+.newLocationsGroupPrograms {
+    flex-direction: column;
+}
+
+.newLocationsContainer, .groupProgramsContainer {
+    width: 100%;
+
+    img {
+        width: 90%;
+    }
+}
+
+.newLocationsImg, .groupProgramsImg, .newLocationsText, .groupProgramsText {
+    display: flex;
+    justify-content: center;
+
+    img {
+        box-shadow: 0rem 3rem 0 -1rem variables.$brightYellow;
+    }
+}
+
+.newLocationsText, .groupProgramsText {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 4rem auto;
+    text-align: center;
+
+    .button {
+        align-self: center;
+        padding: 1rem 5rem 0.5rem;
+    }
+}
+
+.groupProgramsText {
+    order: 1;
+    margin-top: 8rem;
+}
+
+.groupProgramsImg {
+    top: 0;
+}
+
+// SEARCH BY STYLE
+
+.searchByStyleText{
+    margin: 7.5rem auto;
+
+    .button {
+        padding: 2rem 5rem 1.25rem;
+    }
+
+    p {
+        padding-bottom: 3rem;
+        text-align: center;
+    }
+}
+
+// FOOTER
+
+.globalFooter {
+    p {
+        font-size: 1.25rem;
+    }
+}
+}
+
+
+@media (max-width: 640px) {
+
+    // HEADER
+
+.homeHeader {
+    height: 28rem;
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.hamburgerMenu {
+    display: block;
+    margin-top: 1rem;
+}
+
+.fa-bars {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2.5rem;
+    font-size: 4rem;
+}
+
+.homeNav {
+    display: none;
+}
+
+.homeHeaderTitle {
+    text-align: center;
+    margin-top: -4.5rem;
+
+    h1 {
+        font-size: 2.8rem;
+        line-height: 3.6rem;
+    }
+}
+
+.blueCouchImg {
+    img {
+        min-width: 28rem;
+    }
+}
+
+
+// GALLERY
+
+.galleryContainer {
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 75%;
+
+        &:nth-of-type(2) {
+            padding: 7.5rem 0;
+        }
+    }
+}
+
+}
+
+@media (max-width: 520px) {
+
+// HEADER
+
+.homeHeaderTitle {
+    margin-top: -5rem;
+    padding-left: 5.5rem;
+
+    h1 {
+        font-size: 2.8rem;
+        line-height: 3.6rem;
+    }
+}
+
+.newMaterials {
+    margin-top: 7.5rem;
+}
+}
+
+@media (max-width: 460px) {
+
+    // HEADER
+    
+    .homeHeader {
+        height: 20rem;
+    }
+
+    .homeHeaderTitle {
+        margin-top: -6rem;
+        padding-left: 3rem;
+        display: flex;
+
+        h1 {
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+        }
+    }
+
+    .blueCouchImg {
+        img {
+            min-width: 21rem;
+        }
+    }
+}
