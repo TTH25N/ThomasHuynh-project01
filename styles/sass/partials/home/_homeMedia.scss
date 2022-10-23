@@ -357,6 +357,16 @@
 .homeHamburgerMenu {
     display: block;
     margin-top: 1.5rem;
+
+    input:checked ~ .menuContent {
+        li {
+            font-size: 1.2rem;
+
+            a {
+                padding: 0.5rem;
+            }
+        }
+    }
 }
 
 .homeNav {
@@ -364,7 +374,7 @@
 }
 
 .homeHeaderTitle {
-    margin-top: -4.5rem;
+    margin-top: 3rem;
 
     h1 {
         font-size: 3rem;
@@ -405,7 +415,6 @@
 }
 
 .homeHeaderTitle {
-    margin-top: -5rem;
     padding: 1rem 0 1rem 5.5rem;
 
     h1 {
@@ -414,6 +423,24 @@
     }
 }
 
+.homeHamburgerMenu {
+    right: -10rem;
+
+    label {
+        margin: 0 12rem 0 0.25rem;
+    }
+
+    input:checked ~ .menuContent {
+        max-width: 50%;
+        li {
+            font-size: 1rem;
+
+            a {
+                padding: 0.25rem;
+            }
+        }
+    }
+}
 
 // NEW MATERIALS
 
@@ -448,12 +475,37 @@
 
 // HEADER
     
+.homeHamburgerMenu {
+    top: -3rem;
+    right: -15rem;
+
+    label {
+        margin: 0 15rem 0 0;
+    }
+
+    input:checked ~ .menuContent {
+        max-width: 40%;
+
+        ul {
+            padding: 0.25rem;
+        }
+
+        li {
+            font-size: 0.75rem;
+
+            a {
+                padding: 0;
+            }
+        }
+    }
+}
+
 .homeHeader {
     height: 20rem;
 }
 
 .homeHeaderTitle {
-    margin-top: -5rem;
+    margin-top: 2rem;
     padding: 1rem 0 1rem 5.5rem;
 
     h1 {
