@@ -66,9 +66,11 @@
     }
 }
 
-.blogContactHeaderTitle {
-    h1 {
-        font-size: 6.3rem;
+.blogHeader {
+    .blogContactHeaderTitle {
+        h1 {
+            font-size: 6.3rem;
+        }
     }
 }
 
@@ -183,9 +185,11 @@
 
 // HEADER 
 
-.blogContactHeaderTitle {
-    h1 {
-        font-size: 5.8rem;
+.blogHeader {
+    .blogContactHeaderTitle {
+        h1 {
+            font-size: 5.8rem;
+        }
     }
 }
 

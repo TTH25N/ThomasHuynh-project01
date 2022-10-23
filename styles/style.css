@@ -984,6 +984,13 @@ section:nth-of-type(2n) {
   border-bottom: 0.5rem solid #F8FB05;
 }
 
+.blogHeaderTitle {
+  margin-top: 11.5rem;
+}
+.blogHeaderTitle h2 {
+  font-weight: lighter;
+}
+
 .blogPost {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1230,7 +1237,7 @@ section:nth-of-type(2n) {
   .blogNav li {
     margin-left: 5rem;
   }
-  .blogContactHeaderTitle h1 {
+  .blogHeader .blogContactHeaderTitle h1 {
     font-size: 6.3rem;
   }
   .blogPost {
@@ -1310,7 +1317,7 @@ section:nth-of-type(2n) {
     font-size: 1.3rem;
     line-height: 2.6rem;
   }
-  .blogContactHeaderTitle h1 {
+  .blogHeader .blogContactHeaderTitle h1 {
     font-size: 5.8rem;
   }
   .blogPostText h3 {
@@ -1365,6 +1372,10 @@ section:nth-of-type(2n) {
   height: 56.8rem;
 }
 
+.contactHamburgerMenu {
+  display: none;
+}
+
 .contactNav li:nth-child(4) {
   border-bottom: 0.5rem solid #F8FB05;
 }
@@ -1380,10 +1391,6 @@ section:nth-of-type(2n) {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.socialsLocation {
-  width: 20%;
 }
 
 .postMessage {
@@ -1485,6 +1492,7 @@ section:nth-of-type(2n) {
 
 .socialsLocation {
   margin-top: 16.5rem;
+  width: 20%;
 }
 
 .socialIcons {
@@ -1498,4 +1506,150 @@ section:nth-of-type(2n) {
 
 .locationEmail {
   padding: 2rem 0 3rem 0;
+}
+
+@media (max-width: 960px) {
+  .contactHeader nav {
+    font-size: 1.8rem;
+  }
+  .contactNav li {
+    margin-left: 5rem;
+  }
+  .contactHeader .blogContactHeaderTitle h1 {
+    font-size: 6.3rem;
+  }
+  .contactInfoContainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .postMessage {
+    left: 0;
+    -webkit-box-shadow: 0 5rem 0 -2rem #F8FB05;
+            box-shadow: 0 5rem 0 -2rem #F8FB05;
+  }
+  .messageNameEmail input[type=text],
+.messageNameEmail input[type=email] {
+    width: 50rem;
+  }
+  .locationAddress p {
+    font-size: 2.4rem;
+  }
+  .socialIcons {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .fa-facebook-f, .fa-instagram, .fa-twitter {
+    padding-right: 4rem;
+  }
+  .socialsLocation {
+    margin-top: -5rem;
+    margin-bottom: 7.5rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 760px) {
+  .contactHeader {
+    background-position: right -20rem center;
+  }
+  .contactNav {
+    display: none;
+  }
+  .contactHamburgerMenu {
+    display: block;
+    margin-top: 3rem;
+  }
+  .contactHeader .blogContactHeaderTitle h1 {
+    font-size: 5.8rem;
+  }
+  .postMessage {
+    padding: 6.5rem 4.5rem;
+  }
+  .postMessage form input::-webkit-input-placeholder, .postMessage form textarea::-webkit-input-placeholder {
+    font-size: 1.75rem;
+  }
+  .postMessage form input::-moz-placeholder, .postMessage form textarea::-moz-placeholder {
+    font-size: 1.75rem;
+  }
+  .postMessage form input:-ms-input-placeholder, .postMessage form textarea:-ms-input-placeholder {
+    font-size: 1.75rem;
+  }
+  .postMessage form input::-ms-input-placeholder, .postMessage form textarea::-ms-input-placeholder {
+    font-size: 1.75rem;
+  }
+  .postMessage form input::placeholder,
+.postMessage form textarea::placeholder {
+    font-size: 1.75rem;
+  }
+  .messageNameEmail input[type=text],
+.messageNameEmail input[type=email] {
+    width: 80%;
+    padding-left: 2rem;
+  }
+  .messageSubmission textarea {
+    padding-top: 3rem;
+    padding-left: 3rem;
+  }
+  .locationAddress p {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 560px) {
+  .postMessage {
+    padding: 5rem 4rem;
+  }
+  .messageNameEmail input[type=text],
+.messageNameEmail input[type=email] {
+    width: 90%;
+    padding-bottom: 3rem;
+  }
+  .messageSubmission textarea {
+    padding-top: 3rem;
+    padding-left: 3rem;
+  }
+  .locationAddress p {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 460px) {
+  .postMessage {
+    padding: 4rem 2.5rem;
+  }
+  .postMessage form input::-webkit-input-placeholder, .postMessage form textarea::-webkit-input-placeholder {
+    font-size: 1.6rem;
+  }
+  .postMessage form input::-moz-placeholder, .postMessage form textarea::-moz-placeholder {
+    font-size: 1.6rem;
+  }
+  .postMessage form input:-ms-input-placeholder, .postMessage form textarea:-ms-input-placeholder {
+    font-size: 1.6rem;
+  }
+  .postMessage form input::-ms-input-placeholder, .postMessage form textarea::-ms-input-placeholder {
+    font-size: 1.6rem;
+  }
+  .postMessage form input::placeholder,
+.postMessage form textarea::placeholder {
+    font-size: 1.6rem;
+  }
+  .messageNameEmail {
+    margin-bottom: 4rem;
+  }
+  .messageNameEmail input[type=text],
+.messageNameEmail input[type=email] {
+    padding: 3.5rem 1rem 2.5rem 1rem;
+  }
+  .messageSubmission textarea {
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+  .locationEmail {
+    padding: 1rem 0 2rem 0;
+  }
+  .locationAddress p {
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+  }
+  .contactFooter p {
+    font-size: 1.4rem;
+  }
 }
