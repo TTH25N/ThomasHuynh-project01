@@ -391,7 +391,7 @@ section:nth-of-type(2n) {
   height: 75rem;
 }
 
-.hamburgerMenu {
+.homeHamburgerMenu {
   display: none;
 }
 
@@ -811,7 +811,7 @@ section:nth-of-type(2n) {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .hamburgerMenu {
+  .homeHamburgerMenu {
     display: block;
     margin-top: 1.5rem;
   }
@@ -896,6 +896,10 @@ section:nth-of-type(2n) {
   background-size: cover;
   background-position: center;
   height: 56.8rem;
+}
+
+.blogHamburgerMenu {
+  display: none;
 }
 
 .blogNav li:nth-child(3) {
@@ -989,6 +993,86 @@ section:nth-of-type(2n) {
           box-shadow: -2rem 0rem 0 0 #F8FB05;
 }
 
+@media (max-width: 1240px) {
+  .blogPostText p, .blogPostText li, .blogPostSideBarText p, .blogPostSideBarText li, .authorCommentPostDate p, .authorCommentPostDate li, .firstCommentText p, .firstCommentText li, .secondCommentText p, .secondCommentText li {
+    font-size: 1.8rem;
+  }
+  .blogContactHeaderLogo {
+    padding-top: 4rem;
+  }
+  .blogPostText h3 {
+    font-size: 2.9rem;
+    line-height: 4.8rem;
+  }
+  .blogPostSideBarText h4, .userCommentsContainer h4 {
+    font-size: 2.3rem;
+    line-height: 3.8rem;
+  }
+  .blogPostContent {
+    min-width: 60rem;
+  }
+}
+@media (max-width: 960px) {
+  .blogPostText p, .blogPostText li, .blogPostSideBarText p, .blogPostSideBarText li, .authorCommentPostDate p, .authorCommentPostDate li, .firstCommentText p, .firstCommentText li, .secondCommentText p, .secondCommentText li {
+    font-size: 1.5rem;
+  }
+  .blogHeader nav {
+    font-size: 1.8rem;
+  }
+  .blogNav li {
+    margin-left: 5rem;
+  }
+  .blogContactHeaderTitle h1 {
+    font-size: 6.3rem;
+  }
+  .blogPost {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .blogPostContent {
+    margin: 0 auto;
+    width: 90%;
+    border: none;
+  }
+  .blueSofaBedImg img {
+    -webkit-box-shadow: 0 5rem 0 -2rem #F8FB05;
+            box-shadow: 0 5rem 0 -2rem #F8FB05;
+  }
+  .blogPostText {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -7.5rem;
+    padding: 5rem;
+    border: 1.5rem solid #F8FB05;
+  }
+  .blogPostText h3 {
+    font-family: "Kumar One", cursive;
+    font-size: 3.3rem;
+    line-height: 5.8rem;
+    letter-spacing: 0.21rem;
+    text-transform: uppercase;
+  }
+  .blogPostText p {
+    margin: 2.2rem 0;
+  }
+  .blogPostSideBar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 81%;
+    margin: 0 auto;
+    text-align: center;
+    top: 0;
+  }
+  .blogPostSideBar img {
+    display: none;
+  }
+  .blogPostSideBarText {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
 .userCommentsContainer {
   display: -webkit-box;
   display: -ms-flexbox;
