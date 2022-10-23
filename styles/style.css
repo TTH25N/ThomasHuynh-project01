@@ -310,7 +310,7 @@ section:nth-of-type(2n) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 3rem 0;
+  padding-top: 3rem;
 }
 .globalNav li {
   margin-left: 5.5rem;
@@ -406,8 +406,7 @@ section:nth-of-type(2n) {
 
 .homeHeaderTitle {
   width: 45%;
-  padding-top: 1rem;
-  padding: 1rem 0 5rem 12.5rem;
+  padding: 5rem 0 5rem 12.5rem;
 }
 
 .blueCouchImg {
@@ -496,17 +495,18 @@ section:nth-of-type(2n) {
   -ms-flex-item-align: start;
       align-self: flex-start;
   border-radius: 50%;
-  font-size: 3.5rem;
-  padding: 2rem;
+  font-size: 2.5rem;
+  padding: 1.5rem;
+  margin-top: 1rem;
 }
 
 .file {
-  padding: 2rem 2.5rem;
+  padding: 1.5rem 2rem;
 }
 
 .externalResourcesText {
   margin-top: 1.5rem;
-  margin-left: 2rem;
+  margin-left: 2.5rem;
 }
 
 .newLocationsGroupPrograms {
@@ -591,10 +591,10 @@ section:nth-of-type(2n) {
     height: 60rem;
   }
   .homeHeaderTitle {
-    padding-bottom: 1rem;
+    padding: 2rem 0 2rem 14.5rem;
   }
   .homeHeaderTitle h1 {
-    font-size: 5.8rem;
+    font-size: 5.4rem;
   }
   .blueCouchImg img {
     min-width: 68rem;
@@ -632,10 +632,13 @@ section:nth-of-type(2n) {
     height: 50rem;
   }
   .homeHeader nav {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   .homeNav li {
     margin-left: 4.5rem;
+  }
+  .homeHeaderTitle {
+    padding: 2rem 0 2rem 10.5rem;
   }
   .homeHeaderTitle h1 {
     font-size: 4.4rem;
@@ -655,26 +658,25 @@ section:nth-of-type(2n) {
   }
   .icon {
     font-size: 3rem;
-    padding: 1.75rem;
+    padding: 1.5rem;
   }
   .file {
-    padding: 1.75rem 2.25rem;
+    padding: 1.5rem 2rem;
   }
   .newLocationsText, .groupProgramsText {
-    margin: 4rem 0;
     width: 85%;
   }
   .searchByStyleText {
     margin: 10rem auto;
   }
-  .globalFooter p {
-    font-size: 1.6rem;
+  .homeFooter p {
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 840px) {
   .newMaterials h2, .externalResources h2, .newLocationsGroupPrograms h2, .searchByStyle h2 {
-    font-size: 2rem;
-    line-height: 3.2rem;
+    font-size: 2.4rem;
+    line-height: 3.8rem;
   }
   .newMaterials p, .externalResources p, .newLocationsGroupPrograms p, .searchByStyle p {
     font-size: 1.25rem;
@@ -682,27 +684,28 @@ section:nth-of-type(2n) {
   }
   .newMaterials .button, .externalResources .button, .newLocationsGroupPrograms .button, .searchByStyle .button {
     font-size: 1.25rem;
-    padding: 1rem 2rem 0.5rem;
+    padding: 1rem 5rem 0.5rem;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .homeHeader {
     height: 40rem;
   }
   .homeHeader nav {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
   }
   .homeNav li {
-    margin-left: 2.2rem;
+    margin-left: 4rem;
   }
   .homeHeaderTitle {
-    margin-top: -3rem;
-    padding-left: 10rem;
+    padding: 1rem 0 1rem 10.5rem;
   }
   .homeHeaderTitle h1 {
-    font-size: 3rem;
-    line-height: 4rem;
+    font-size: 3.4rem;
+    line-height: 3.8rem;
   }
   .blueCouchImg img {
-    min-width: 42rem;
+    min-width: 44rem;
   }
   .newMaterials {
     -webkit-box-orient: vertical;
@@ -719,11 +722,6 @@ section:nth-of-type(2n) {
     width: 90%;
     text-align: center;
     margin-bottom: 5rem;
-  }
-  .newMaterialsText .button {
-    -ms-flex-item-align: center;
-        align-self: center;
-    padding: 1rem 5rem 0.5rem;
   }
   .purpleCoachImg {
     margin-left: 0;
@@ -775,13 +773,8 @@ section:nth-of-type(2n) {
         -ms-flex-align: center;
             align-items: center;
     width: 90%;
-    margin: 4rem auto;
+    margin: 4rem auto 6rem;
     text-align: center;
-  }
-  .newLocationsText .button, .groupProgramsText .button {
-    -ms-flex-item-align: center;
-        align-self: center;
-    padding: 1rem 5rem 0.5rem;
   }
   .groupProgramsText {
     -webkit-box-ordinal-group: 2;
@@ -802,13 +795,13 @@ section:nth-of-type(2n) {
     padding-bottom: 3rem;
     text-align: center;
   }
-  .globalFooter p {
-    font-size: 1.25rem;
+  .homeFooter p {
+    font-size: 1.4rem;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 780px) {
   .homeHeader {
-    height: 28rem;
+    height: 32rem;
   }
   .homeHeader nav {
     display: -webkit-box;
@@ -820,31 +813,20 @@ section:nth-of-type(2n) {
   }
   .hamburgerMenu {
     display: block;
-    margin-top: 1rem;
-  }
-  .fa-bars {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    padding: 2.5rem;
-    font-size: 4rem;
+    margin-top: 1.5rem;
   }
   .homeNav {
     display: none;
   }
   .homeHeaderTitle {
-    text-align: center;
     margin-top: -4.5rem;
   }
   .homeHeaderTitle h1 {
-    font-size: 2.8rem;
-    line-height: 3.6rem;
+    font-size: 3rem;
+    line-height: 3.4rem;
   }
   .blueCouchImg img {
-    min-width: 28rem;
+    min-width: 30rem;
   }
   .galleryContainer {
     -webkit-box-orient: vertical;
@@ -862,36 +844,50 @@ section:nth-of-type(2n) {
     padding: 7.5rem 0;
   }
 }
-@media (max-width: 520px) {
+@media (max-width: 580px) {
+  .homeHeader {
+    height: 30rem;
+  }
   .homeHeaderTitle {
     margin-top: -5rem;
-    padding-left: 5.5rem;
+    padding: 1rem 0 1rem 5.5rem;
   }
   .homeHeaderTitle h1 {
     font-size: 2.8rem;
-    line-height: 3.6rem;
+    line-height: 3.2rem;
   }
   .newMaterials {
     margin-top: 7.5rem;
   }
 }
 @media (max-width: 460px) {
+  .newMaterials h2, .externalResources h2, .newLocationsGroupPrograms h2, .searchByStyle h2 {
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+  }
+  .newMaterials p, .externalResources p, .newLocationsGroupPrograms p, .searchByStyle p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+  .newMaterials .button, .externalResources .button, .newLocationsGroupPrograms .button, .searchByStyle .button {
+    font-size: 1.25rem;
+    padding: 1rem 5rem 0.5rem;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
   .homeHeader {
     height: 20rem;
   }
   .homeHeaderTitle {
-    margin-top: -6rem;
-    padding-left: 3rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    margin-top: -5rem;
+    padding: 1rem 0 1rem 5.5rem;
   }
   .homeHeaderTitle h1 {
-    font-size: 2.4rem;
-    line-height: 3.2rem;
+    font-size: 2rem;
+    line-height: 2.4rem;
   }
   .blueCouchImg img {
-    min-width: 21rem;
+    min-width: 20rem;
   }
 }
 .blogHeader {
