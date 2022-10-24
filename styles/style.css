@@ -416,7 +416,7 @@ section:nth-of-type(2n) {
   display: none;
 }
 .homeHamburgerMenu input:checked ~ label, .blogHamburgerMenu input:checked ~ label, .contactHamburgerMenu input:checked ~ label {
-  background-image: url(../icons/close-menu.svg);
+  background-image: url(../icons/close-menu-updated.svg);
 }
 .homeHamburgerMenu input:checked ~ .menuContent, .blogHamburgerMenu input:checked ~ .menuContent, .contactHamburgerMenu input:checked ~ .menuContent {
   max-height: 100%;
