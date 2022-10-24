@@ -27,8 +27,13 @@ h2 {
     text-transform: uppercase;
 }
 
-
-
+h3 {
+    font-family: variables.$secondaryHeadingFont;
+    font-size: 3.3rem;
+    line-height: 5.8rem;
+    letter-spacing: 0.21rem;
+    text-transform: uppercase;
+}
 
 h4 {
     font-family: variables.$secondaryHeadingFont;

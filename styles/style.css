@@ -248,6 +248,14 @@ h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  font-family: "Kumar One", cursive;
+  font-size: 3.3rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.21rem;
+  text-transform: uppercase;
+}
+
 h4 {
   font-family: "Kumar One", cursive;
   font-size: 2.5rem;
@@ -383,6 +391,45 @@ section:nth-of-type(2n) {
   padding: 0.5rem 0;
 }
 
+.homeHamburgerMenu, .blogHamburgerMenu, .contactHamburgerMenu {
+  padding: 3rem;
+  position: absolute;
+  top: -2rem;
+  right: -1rem;
+}
+.homeHamburgerMenu a, .blogHamburgerMenu a, .contactHamburgerMenu a {
+  display: block;
+  padding: 1rem 0;
+}
+.homeHamburgerMenu label, .blogHamburgerMenu label, .contactHamburgerMenu label {
+  display: block;
+  cursor: pointer;
+  background: url(../icons/hamburger-menu.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding: 3rem;
+  margin: 0 3.5rem 1rem 1rem;
+}
+.homeHamburgerMenu input#menu, .blogHamburgerMenu input#menu, .contactHamburgerMenu input#menu {
+  display: none;
+}
+.homeHamburgerMenu input:checked ~ label, .blogHamburgerMenu input:checked ~ label, .contactHamburgerMenu input:checked ~ label {
+  background-image: url(../icons/close-menu.svg);
+}
+.homeHamburgerMenu input:checked ~ .menuContent, .blogHamburgerMenu input:checked ~ .menuContent, .contactHamburgerMenu input:checked ~ .menuContent {
+  max-height: 100%;
+  background-color: #F5F5F5;
+  border: 2px solid black;
+}
+.homeHamburgerMenu input:checked ~ .menuContent ul, .blogHamburgerMenu input:checked ~ .menuContent ul, .contactHamburgerMenu input:checked ~ .menuContent ul {
+  padding: 1rem;
+}
+
+.menuContent {
+  max-height: 0;
+  overflow: hidden;
+}
+
 .homeHeader {
   background-image: url(../images/header-home.jpg);
   background-repeat: no-repeat;
@@ -414,45 +461,6 @@ section:nth-of-type(2n) {
 }
 .blueCouchImg img {
   min-width: 75rem;
-}
-
-.homeHamburgerMenu {
-  padding: 3rem;
-  position: absolute;
-  top: -2rem;
-  right: -1rem;
-}
-.homeHamburgerMenu a {
-  display: block;
-  padding: 1rem 0;
-}
-.homeHamburgerMenu label {
-  display: block;
-  cursor: pointer;
-  background: url(../icons/hamburger-menu.svg);
-  background-repeat: no-repeat;
-  background-position: right center;
-  padding: 3rem;
-  margin: 0 3.5rem 1rem 1rem;
-}
-.homeHamburgerMenu input#menu {
-  display: none;
-}
-.homeHamburgerMenu input:checked ~ label {
-  background-image: url(../icons/close-menu.svg);
-}
-.homeHamburgerMenu input:checked ~ .menuContent {
-  max-height: 100%;
-  background-color: #F5F5F5;
-  border: 2px solid black;
-}
-.homeHamburgerMenu input:checked ~ .menuContent ul {
-  padding: 1rem;
-}
-
-.menuContent {
-  max-height: 0;
-  overflow: hidden;
 }
 
 .newMaterials {
@@ -981,14 +989,11 @@ section:nth-of-type(2n) {
 }
 
 .blogNav li:nth-child(3) {
-  border-bottom: 0.5rem solid #F8FB05;
+  border-bottom: 0.45rem solid #F8FB05;
 }
 
 .blogHeaderTitle {
   margin-top: 11.5rem;
-}
-.blogHeaderTitle h2 {
-  font-weight: lighter;
 }
 
 .blogPost {
@@ -1020,14 +1025,7 @@ section:nth-of-type(2n) {
 
 .blogPostText {
   width: 77.5%;
-  margin: -10rem 0 5rem 16%;
-}
-.blogPostText h3 {
-  font-family: "Kumar One", cursive;
-  font-size: 3.3rem;
-  line-height: 5.8rem;
-  letter-spacing: 0.21rem;
-  text-transform: uppercase;
+  margin: -10rem 0 5rem 13.5rem;
 }
 .blogPostText p {
   margin: 2.2rem 0;
@@ -1049,9 +1047,6 @@ section:nth-of-type(2n) {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   position: relative;
   top: 12.5rem;
 }
@@ -1059,23 +1054,23 @@ section:nth-of-type(2n) {
   -webkit-box-shadow: -3rem 1rem 0 -1rem #F8FB05;
           box-shadow: -3rem 1rem 0 -1rem #F8FB05;
 }
-.blogPostSideBar h4 {
-  padding-top: 2rem;
-}
-.blogPostSideBar ul {
-  list-style: disc;
-  font-family: "Lato", sans-serif;
-  font-size: 2rem;
-  line-height: 3.2rem;
-  letter-spacing: 0.2rem;
-  padding-left: 2rem;
-}
 
 .blogPostSideBarText {
   background-color: #F8FB05;
   padding: 0 1rem 3rem;
   -webkit-box-shadow: -2rem 0rem 0 0 #F8FB05;
           box-shadow: -2rem 0rem 0 0 #F8FB05;
+}
+.blogPostSideBarText h4 {
+  padding-top: 2rem;
+}
+.blogPostSideBarText ul {
+  list-style: disc;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+  padding-left: 2rem;
 }
 
 .userCommentsContainer {
@@ -1098,10 +1093,7 @@ section:nth-of-type(2n) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.firstComment {
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 }
 
 .firstCommentImg, .secondCommentImg {
@@ -1110,7 +1102,6 @@ section:nth-of-type(2n) {
 
 .firstCommentText, .secondCommentText {
   width: 50%;
-  margin-bottom: 5rem;
 }
 
 .authorCommentPostDate {
@@ -1212,8 +1203,11 @@ section:nth-of-type(2n) {
   .blogPostText p, .blogPostText li, .blogPostSideBarText p, .blogPostSideBarText li, .authorCommentPostDate p, .authorCommentPostDate li, .firstCommentText p, .firstCommentText li, .secondCommentText p, .secondCommentText li {
     font-size: 1.8rem;
   }
-  .blogContactHeaderLogo {
+  .blogHeader .blogContactHeaderLogo {
     padding-top: 4rem;
+  }
+  .blogPostText {
+    padding-right: 3.25rem;
   }
   .blogPostText h3 {
     font-size: 2.9rem;
@@ -1272,7 +1266,7 @@ section:nth-of-type(2n) {
         -ms-flex-direction: row;
             flex-direction: row;
     width: 65%;
-    margin: 0 auto;
+    margin: 0 auto 8rem;
     text-align: center;
     top: 0;
     border: 0.1rem solid #151514;
@@ -1286,7 +1280,6 @@ section:nth-of-type(2n) {
   }
   .firstCommentText, .secondCommentText {
     width: 100%;
-    margin-bottom: 2rem;
   }
   .commentNameEmail input[type=text],
 .commentNameEmail input[type=email] {
@@ -1303,7 +1296,10 @@ section:nth-of-type(2n) {
   }
   .blogHamburgerMenu {
     display: block;
-    margin-top: 3rem;
+    margin-top: 1rem;
+  }
+  .blogHamburgerMenu label {
+    margin-right: 4.5rem;
   }
   .blogPostContent {
     min-width: 20rem;
@@ -1320,6 +1316,23 @@ section:nth-of-type(2n) {
   .blogHeader .blogContactHeaderTitle h1 {
     font-size: 5.8rem;
   }
+  .blogHamburgerMenu {
+    display: block;
+    margin-top: 1rem;
+    right: -3rem;
+  }
+  .blogHamburgerMenu label {
+    margin-left: 0;
+  }
+  .blogHamburgerMenu input:checked ~ .menuContent {
+    max-width: 85%;
+  }
+  .blogHamburgerMenu input:checked ~ .menuContent li {
+    font-size: 1.2rem;
+  }
+  .blogPostText {
+    text-align: center;
+  }
   .blogPostText h3 {
     font-size: 2.9rem;
     line-height: 4.4rem;
@@ -1330,11 +1343,8 @@ section:nth-of-type(2n) {
   .authorBlogPostDate {
     text-align: center;
   }
-  .userComments {
-    padding-top: 5rem;
-  }
   .firstCommentImg, .secondCommentImg {
-    margin-right: 2rem;
+    margin-right: 3rem;
   }
   .postComment form input::-webkit-input-placeholder, .postComment form textarea::-webkit-input-placeholder {
     font-size: 1.75rem;
@@ -1354,7 +1364,7 @@ section:nth-of-type(2n) {
   }
   .commentNameEmail input[type=text],
 .commentNameEmail input[type=email] {
-    width: 100%;
+    width: 90%;
     padding: 2rem;
   }
   .commentSubmission textarea {

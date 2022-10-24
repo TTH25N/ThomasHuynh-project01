@@ -15,15 +15,11 @@
 .blogNav {
     li {
         &:nth-child(3) {
-            border-bottom: 0.5rem solid variables.$brightYellow;
+            border-bottom: 0.45rem solid variables.$brightYellow;
         }
     }
 }
 
 .blogHeaderTitle {
     margin-top: 11.5rem;
-
-    h2 {
-        font-weight: lighter;
-    }
 }

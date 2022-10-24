@@ -2,7 +2,6 @@
 
 @media(max-width: 1240px) {
 
-
 // GENERAL
 
 .blogPostText, .blogPostSideBarText, .authorCommentPostDate, .firstCommentText, .secondCommentText {
@@ -11,17 +10,19 @@
     }
 }
 
-
 // HEADER
 
-.blogContactHeaderLogo {
-    padding-top: 4rem;
+.blogHeader {
+    .blogContactHeaderLogo {
+        padding-top: 4rem;
+    }
 }
-
 
 // BLOG POST
 
 .blogPostText {
+    padding-right: 3.25rem;
+
     h3 {
         font-size: 2.9rem;
         line-height: 4.8rem;
@@ -109,7 +110,7 @@
 .blogPostSideBar {
     flex-direction: row;
     width: 65%;
-    margin: 0 auto;
+    margin: 0 auto 8rem;
     text-align: center;
     top: 0;
     border: 0.1rem solid variables.$black;
@@ -128,7 +129,6 @@
 
 .firstCommentText, .secondCommentText {
     width: 100%;
-    margin-bottom: 2rem;
 }
 
 .commentNameEmail {
@@ -154,7 +154,11 @@
 
 .blogHamburgerMenu {
     display: block;
-    margin-top: 3rem;
+    margin-top: 1rem;
+
+    label {
+        margin-right: 4.5rem;
+    }
 }
 
 
@@ -193,9 +197,28 @@
     }
 }
 
+.blogHamburgerMenu {
+    display: block;
+    margin-top: 1rem;
+    right: -3rem;
+
+    label {
+        margin-left: 0;
+    }
+
+    input:checked ~ .menuContent {
+        max-width: 85%;
+        li {
+            font-size: 1.2rem;
+        }
+    }
+}
+
 // BLOG
 
 .blogPostText {
+    text-align: center;
+
     h3 {
         font-size: 2.9rem;
         line-height: 4.4rem;
@@ -212,12 +235,8 @@
 
 // USER COMMENTS
 
-.userComments {
-    padding-top: 5rem;
-}
-
 .firstCommentImg, .secondCommentImg {
-    margin-right: 2rem;
+    margin-right: 3rem;
 }
 
 .postComment {
@@ -232,7 +251,7 @@
 .commentNameEmail {
     input[type=text], 
     input[type=email] {
-        width: 100%;
+        width: 90%;
         padding: 2rem;
     }
 }

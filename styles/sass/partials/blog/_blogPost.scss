@@ -25,20 +25,11 @@
 
 .blogPostText {
     width: 77.5%;
-    margin: -10rem 0 5rem 16%;
-
-    h3 {
-        font-family: variables.$secondaryHeadingFont;
-        font-size: 3.3rem;
-        line-height: 5.8rem;
-        letter-spacing: 0.21rem;
-        text-transform: uppercase;
-    }
+    margin: -10rem 0 5rem 13.5rem;
 
     p {
         margin: 2.2rem 0;
     }
-
 }
 
 .authorBlogPostDate {
@@ -53,13 +44,18 @@
     width: 22%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     position: relative;
     top: 12.5rem;
 
     img {
         box-shadow: -3rem 1rem 0 -1rem variables.$brightYellow;
     }
+}
+
+.blogPostSideBarText {
+    background-color: variables.$brightYellow;
+    padding: 0 1rem 3rem;
+    box-shadow: -2rem 0rem 0 0 variables.$brightYellow;
 
     h4 {
         padding-top: 2rem;
@@ -73,10 +69,4 @@
         letter-spacing: 0.2rem;
         padding-left: 2rem;
     }
-}
-
-.blogPostSideBarText {
-    background-color: variables.$brightYellow;
-    padding: 0 1rem 3rem;
-    box-shadow: -2rem 0rem 0 0 variables.$brightYellow;
 }
