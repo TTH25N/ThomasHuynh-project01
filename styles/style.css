@@ -322,20 +322,25 @@ section:nth-of-type(2n) {
 }
 .globalNav li {
   margin-left: 5.5rem;
+}
+.globalNav a {
   position: relative;
 }
-.globalNav li::after {
+.globalNav a::after {
   content: "";
   height: 0.4rem;
   width: 0;
   background-color: #F8FB05;
   position: absolute;
   left: 0;
-  top: 2.9rem;
+  top: 2.6rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.globalNav li:hover::after {
+.globalNav a:focus::after {
+  width: 100%;
+}
+.globalNav a:hover::after {
   width: 100%;
 }
 
@@ -358,14 +363,11 @@ section:nth-of-type(2n) {
   line-height: 2.25rem;
   letter-spacing: 0.21rem;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: lighter;
 }
 
 .blogContactHeaderTitle {
   margin-top: 11.5rem;
-}
-.blogContactHeaderTitle h2 {
-  font-weight: lighter;
 }
 
 .button {
@@ -992,10 +994,6 @@ section:nth-of-type(2n) {
   border-bottom: 0.45rem solid #F8FB05;
 }
 
-.blogHeaderTitle {
-  margin-top: 11.5rem;
-}
-
 .blogPost {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1317,9 +1315,7 @@ section:nth-of-type(2n) {
     font-size: 5.8rem;
   }
   .blogHamburgerMenu {
-    display: block;
-    margin-top: 1rem;
-    right: -3rem;
+    right: -3.5rem;
   }
   .blogHamburgerMenu label {
     margin-left: 0;
@@ -1387,7 +1383,7 @@ section:nth-of-type(2n) {
 }
 
 .contactNav li:nth-child(4) {
-  border-bottom: 0.5rem solid #F8FB05;
+  border-bottom: 0.45rem solid #F8FB05;
 }
 
 .contactInfo {
@@ -1519,6 +1515,9 @@ section:nth-of-type(2n) {
 }
 
 @media (max-width: 960px) {
+  .contactHeader .blogContactHeaderLogo {
+    padding-top: 4rem;
+  }
   .contactHeader nav {
     font-size: 1.8rem;
   }
@@ -1567,7 +1566,10 @@ section:nth-of-type(2n) {
   }
   .contactHamburgerMenu {
     display: block;
-    margin-top: 3rem;
+    margin-top: 1rem;
+  }
+  .contactHamburgerMenu label {
+    margin-right: 4.5rem;
   }
   .contactHeader .blogContactHeaderTitle h1 {
     font-size: 5.8rem;
@@ -1593,10 +1595,12 @@ section:nth-of-type(2n) {
   }
   .messageNameEmail input[type=text],
 .messageNameEmail input[type=email] {
+    font-size: 1.75rem;
     width: 80%;
     padding-left: 2rem;
   }
   .messageSubmission textarea {
+    font-size: 1.75rem;
     padding-top: 3rem;
     padding-left: 3rem;
   }
@@ -1610,18 +1614,25 @@ section:nth-of-type(2n) {
   }
   .messageNameEmail input[type=text],
 .messageNameEmail input[type=email] {
-    width: 90%;
     padding-bottom: 3rem;
-  }
-  .messageSubmission textarea {
-    padding-top: 3rem;
-    padding-left: 3rem;
   }
   .locationAddress p {
     font-size: 1.8rem;
   }
 }
 @media (max-width: 460px) {
+  .contactHamburgerMenu {
+    right: -3.5rem;
+  }
+  .contactHamburgerMenu label {
+    margin-left: 0;
+  }
+  .contactHamburgerMenu input:checked ~ .menuContent {
+    max-width: 85%;
+  }
+  .contactHamburgerMenu input:checked ~ .menuContent li {
+    font-size: 1.2rem;
+  }
   .postMessage {
     padding: 4rem 2.5rem;
   }
@@ -1646,9 +1657,11 @@ section:nth-of-type(2n) {
   }
   .messageNameEmail input[type=text],
 .messageNameEmail input[type=email] {
+    font-size: 1.6rem;
     padding: 3.5rem 1rem 2.5rem 1rem;
   }
   .messageSubmission textarea {
+    font-size: 1.6rem;
     padding-top: 2rem;
     padding-left: 2rem;
   }

@@ -5,6 +5,12 @@
 // HEADER 
 
 .contactHeader {
+    .blogContactHeaderLogo {
+        padding-top: 4rem;
+    }
+}
+
+.contactHeader {
     nav {
         font-size: 1.8rem;
     }
@@ -80,7 +86,11 @@
 
 .contactHamburgerMenu {
     display: block;
-    margin-top: 3rem;
+    margin-top: 1rem;
+
+    label {
+        margin-right: 4.5rem;
+    }
 }
 
 .contactHeader {
@@ -108,6 +118,7 @@
 .messageNameEmail {
     input[type=text], 
     input[type=email] {
+        font-size: 1.75rem;
         width: 80%;
         padding-left: 2rem;
     }
@@ -115,6 +126,7 @@
 
 .messageSubmission {
     textarea {
+        font-size: 1.75rem;
         padding-top: 3rem;
         padding-left: 3rem;
     }
@@ -138,15 +150,7 @@
     .messageNameEmail {
         input[type=text], 
         input[type=email] {
-            width: 90%;
             padding-bottom: 3rem;
-        }
-    }
-    
-    .messageSubmission {
-        textarea {
-            padding-top: 3rem;
-            padding-left: 3rem;
         }
     }
     
@@ -159,7 +163,24 @@
 
 @media(max-width: 460px) {
 
-    // CONTACT INFO
+// HEADER
+
+    .contactHamburgerMenu {
+        right: -3.5rem;
+    
+        label {
+            margin-left: 0;
+        }
+    
+        input:checked ~ .menuContent {
+            max-width: 85%;
+            li {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+// CONTACT INFO
 
 .postMessage {
     padding: 4rem 2.5rem; 
@@ -174,15 +195,16 @@
 
 .messageNameEmail {
     margin-bottom: 4rem;
-
     input[type=text], 
     input[type=email] {
+        font-size: 1.6rem;
         padding: 3.5rem 1rem 2.5rem 1rem;
     }
 }
 
 .messageSubmission {
     textarea {
+        font-size: 1.6rem;
         padding-top: 2rem;
         padding-left: 2rem;
     }

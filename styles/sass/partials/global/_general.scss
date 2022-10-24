@@ -49,8 +49,10 @@ section:nth-of-type(2n) {
 
     li {
         margin-left: 5.5rem;
-        position: relative;
+    }
 
+    a {
+        position: relative;
         &::after {
             content: "";
             height: 0.4rem;
@@ -58,8 +60,12 @@ section:nth-of-type(2n) {
             background-color: variables.$brightYellow;
             position: absolute;
             left: 0;
-            top: 2.9rem;
+            top: 2.6rem;
             transition: 0.5s;
+        }
+
+        &:focus::after {
+            width: 100%;
         }
 
         &:hover::after {
@@ -83,16 +89,12 @@ section:nth-of-type(2n) {
         line-height: 2.25rem;
         letter-spacing: 0.21rem;
         text-transform: uppercase;
-        font-weight: 300;
+        font-weight: lighter;
     }
 }
 
 .blogContactHeaderTitle {
     margin-top: 11.5rem;
-
-    h2 {
-        font-weight: lighter;
-    }
 }
 
 .button {

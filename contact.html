@@ -8,29 +8,37 @@
     <link rel="stylesheet" href="./styles/style.css">
     <script src="https://kit.fontawesome.com/0f60a8fc75.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="externalWrapper">
+    <div class="externalWrapper"> <!-- START .externalWrapper -->
+
+        <!-- Header Section -->
         <header class="contactHeader">
-            <div class="wrapper">
-                <div class="blogContactLogoNav">
+            <div class="wrapper"> <!-- START .wrapper -->
+
+                <!-- Blog and Contact Logo and Nav Bar -->
+                <div class="blogContactLogoNav"> <!-- START .blogContactLogoNav -->
+
                     <div class="blogContactHeaderLogo">
                         <p><a href="./index.html">Sanctuary Helpers</a></p>
                     </div>
     
                     <nav>
+                        <!-- Drop Down Menu -->
                         <div class="contactHamburgerMenu">
                             <input type="checkbox" id="menu">
                             <label for="menu"></label>
                             <div class="menuContent">
                                 <ul>
-                                    <li><a href="#">Home</a></li>
+                                    <li><a href="./index.html">Home</a></li>
                                     <li><a href="#">About</a></li>
                                     <li><a href="./blog.html">Blog</a></li>
-                                    <li><a href="./contact.html">Contact</a></li>
+                                    <li><a href="#">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
 
+                        <!-- Regular Menu -->
                         <ul class="contactNav globalNav">
                             <li><a href="./index.html">Home</a></li>
                             <li><a href="#">About</a></li>
@@ -38,58 +46,82 @@
                             <li><a href="#"">Contact</a></li>
                         </ul>
                     </nav>
-                </div>
+                </div> <!-- END .blogContactLogoNav -->
+
                 <div class="blogContactHeaderTitle">
-                <h1>Get In Touch</h1>
+                    <h1>Get In Touch</h1>
                 </div>
-            </div>
+            </div> <!-- END .wrapper -->
+
         </header>
 
+        <!-- Main Section -->
         <main>
-            <section class="contactInfo">
-                <div class="contactInfoContainer wrapper">
-                    <div class="postMessage">
+
+            <!-- Contact Info Section -->
+            <section class="contactInfo"> <!-- START .contactInfo -->
+                <div class="contactInfoContainer wrapper"> <!-- START .contactInfoContainer .wrapper -->
+
+                    <!-- Message Post Form -->
+                    <div class="postMessage"> <!-- START .postMessage  -->
                         <form action="submit">
-    
+
+                            <!-- Name and Email Fields -->
                             <div class="messageNameEmail">
+
+                                <!-- Name Field -->
                                 <label for="name" class="sr-only">Name</label>
                                 <input type="text" name="username" id="username" placeholder="name" required>
-                
+
+                                <!-- Email Field -->
                                 <label for="email" class="sr-only">Email Address</label>
                                 <input type="email" name="userpass" id="userpass" placeholder="email address" required>
+
                             </div>
     
+                            <!-- Message Field -->
                             <div class="messageSubmission">
                                 <textarea name="message" id="message" placeholder="message" required></textarea>
-            
+                                
+                                <!-- Post Message Button -->
                                 <button type="submit" class="button">Submit</button>
                             </div>
                         </form>
-                    </div>
+                    </div> <!-- END .postMessage  -->
     
-                    <div class="socialsLocation">
+                    <!-- Social Media Icons, Email, and Location -->
+                    <div class="socialsLocation"> <!-- START .socialsLocations -->
+
+                        <!-- Social Media Icons -->
                         <div class="socialIcons">
+                            <!-- Facebook -->
                             <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                            <!-- Instagram -->
                             <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            <!-- Twitter -->
                             <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
+                            <!-- Whatsapp -->
                             <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
                         </div>
     
+                        <!-- Email and Street Address -->
                         <div class="locationAddress">
                             <p class="locationEmail">info@email.com</p>
                             <p>123 - 456 - 7890</p>
                             <p>123 Queen Street West, Unit 10<br>Toronto, Ontario M5V2D5</p>
                         </div>
-                    </div>
-                </div>
-            </section>
+
+                    </div> <!-- END .socialsLocations -->
+                </div> <!-- END .contactInfoContainer .wrapper -->
+            </section> <!-- END .contactInfo -->
         </main>
 
+        <!-- Footer Section -->
         <footer class="contactFooter globalFooter">
             <div class="wrapper">
                 <p>Copyright © 2022 HackerYou</p>
             </div>
         </footer>
-    </div>
+    </div> <!-- END .externalWrapper -->
 </body>
 </html>
