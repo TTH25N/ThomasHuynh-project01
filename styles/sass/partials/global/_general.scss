@@ -122,8 +122,8 @@ section:nth-of-type(2n) {
 .homeHamburgerMenu, .blogHamburgerMenu, .contactHamburgerMenu {
     padding: 3rem;
     position: absolute;
-    top: -2rem;
-    right: -1rem;
+    top: -4rem;
+    right: 0;
 
     a {
         display: block;
@@ -141,11 +141,11 @@ section:nth-of-type(2n) {
     }
 
     input#menu {
-        display: none;
+        opacity: 0;
     }
 
     input:checked ~ label {
-        background-image: url(../../../../icons/close-menu-updated.svg);
+        background-image: url(../icons/close-menu-updated.svg);
     }
 
     input:checked ~ .menuContent {

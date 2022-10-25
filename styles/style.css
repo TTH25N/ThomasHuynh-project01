@@ -396,8 +396,8 @@ section:nth-of-type(2n) {
 .homeHamburgerMenu, .blogHamburgerMenu, .contactHamburgerMenu {
   padding: 3rem;
   position: absolute;
-  top: -2rem;
-  right: -1rem;
+  top: -4rem;
+  right: 0;
 }
 .homeHamburgerMenu a, .blogHamburgerMenu a, .contactHamburgerMenu a {
   display: block;
@@ -413,10 +413,10 @@ section:nth-of-type(2n) {
   margin: 0 3.5rem 1rem 1rem;
 }
 .homeHamburgerMenu input#menu, .blogHamburgerMenu input#menu, .contactHamburgerMenu input#menu {
-  display: none;
+  opacity: 0;
 }
 .homeHamburgerMenu input:checked ~ label, .blogHamburgerMenu input:checked ~ label, .contactHamburgerMenu input:checked ~ label {
-  background-image: url(../../../../icons/close-menu-updated.svg);
+  background-image: url(../icons/close-menu-updated.svg);
 }
 .homeHamburgerMenu input:checked ~ .menuContent, .blogHamburgerMenu input:checked ~ .menuContent, .contactHamburgerMenu input:checked ~ .menuContent {
   max-height: 100%;
@@ -863,6 +863,7 @@ section:nth-of-type(2n) {
   .homeHamburgerMenu {
     display: block;
     margin-top: 1.5rem;
+    top: -5rem;
   }
   .homeHamburgerMenu input:checked ~ .menuContent li {
     font-size: 1.2rem;
@@ -945,11 +946,11 @@ section:nth-of-type(2n) {
         align-self: center;
   }
   .homeHamburgerMenu {
-    top: -3rem;
-    right: -15rem;
+    top: -6rem;
+    right: -11.5rem;
   }
   .homeHamburgerMenu label {
-    margin: 0 15rem 0 0;
+    margin: 0 12rem 0 -1rem;
   }
   .homeHamburgerMenu input:checked ~ .menuContent {
     max-width: 40%;
@@ -1259,10 +1260,6 @@ section:nth-of-type(2n) {
     margin: 2.2rem 0;
   }
   .blogPostSideBar {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     width: 65%;
     margin: 0 auto 8rem;
     text-align: center;
@@ -1295,6 +1292,8 @@ section:nth-of-type(2n) {
   .blogHamburgerMenu {
     display: block;
     margin-top: 1rem;
+    right: -2rem;
+    top: -5rem;
   }
   .blogHamburgerMenu label {
     margin-right: 4.5rem;
@@ -1360,10 +1359,12 @@ section:nth-of-type(2n) {
   }
   .commentNameEmail input[type=text],
 .commentNameEmail input[type=email] {
+    font-size: 1.75rem;
     width: 90%;
     padding: 2rem;
   }
   .commentSubmission textarea {
+    font-size: 1.75rem;
     padding: 2rem;
   }
   .blogFooter p {
@@ -1567,6 +1568,8 @@ section:nth-of-type(2n) {
   .contactHamburgerMenu {
     display: block;
     margin-top: 1rem;
+    right: -2rem;
+    top: -5rem;
   }
   .contactHamburgerMenu label {
     margin-right: 4.5rem;
@@ -1657,6 +1660,7 @@ section:nth-of-type(2n) {
   }
   .messageNameEmail input[type=text],
 .messageNameEmail input[type=email] {
+    width: 90%;
     font-size: 1.6rem;
     padding: 3.5rem 1rem 2.5rem 1rem;
   }

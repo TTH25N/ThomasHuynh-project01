@@ -357,6 +357,7 @@
 .homeHamburgerMenu {
     display: block;
     margin-top: 1.5rem;
+    top: -5rem;
 
     input:checked ~ .menuContent {
         li {
@@ -476,11 +477,11 @@
 // HEADER
     
 .homeHamburgerMenu {
-    top: -3rem;
-    right: -15rem;
+    top: -6rem;
+    right: -11.5rem;
 
     label {
-        margin: 0 15rem 0 0;
+        margin: 0 12rem 0 -1rem;
     }
 
     input:checked ~ .menuContent {
@@ -514,9 +515,9 @@
     }
 }
 
-    .blueCouchImg {
-        img {
-            min-width: 20rem;
-        }
+.blueCouchImg {
+    img {
+        min-width: 20rem;
     }
+}
 }
