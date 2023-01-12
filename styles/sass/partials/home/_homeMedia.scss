@@ -392,11 +392,11 @@
 
 // GALLERY
 
-.galleryContainer {
+.galleryList {
     flex-direction: column;
     align-items: center;
 
-    img {
+    li {
         width: 75%;
 
         &:nth-of-type(2) {

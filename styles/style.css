@@ -502,16 +502,24 @@ section:nth-of-type(2n) {
 }
 
 .galleryContainer {
+  padding: 10rem 0;
+}
+
+.galleryList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10rem 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-.galleryContainer img {
+.galleryList li {
   width: 30%;
+}
+.galleryList img {
+  width: 100%;
 }
 
 .externalResources {
@@ -883,7 +891,7 @@ section:nth-of-type(2n) {
   .blueCouchImg img {
     min-width: 30rem;
   }
-  .galleryContainer {
+  .galleryList {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -892,10 +900,10 @@ section:nth-of-type(2n) {
         -ms-flex-align: center;
             align-items: center;
   }
-  .galleryContainer img {
+  .galleryList li {
     width: 75%;
   }
-  .galleryContainer img:nth-of-type(2) {
+  .galleryList li:nth-of-type(2) {
     padding: 7.5rem 0;
   }
 }
